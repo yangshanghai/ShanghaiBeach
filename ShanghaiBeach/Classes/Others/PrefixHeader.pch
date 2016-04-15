@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  ShanghaiBeach
+//
+//  Created by 杨上海 on 16/4/15.
+//  Copyright © 2016年 杨上海. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+XMGExtension.h"
+#import "UIBarButtonItem+XMGExtension.h"
+
+#ifdef DEBUG
+#define XMGLog(...) NSLog(__VA_ARGS__)
+#else
+#define XMGLog(...)
+#endif
+
+#define XMGLogFunc XMGLog(@"%s", __func__)
+
+#define XMGRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define XMGGlobalBg XMGRGBColor(223, 223, 223)
+#endif /* PrefixHeader_pch */
