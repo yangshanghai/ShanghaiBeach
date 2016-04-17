@@ -22,6 +22,7 @@
 		B8CD3C841CC0E87F00B7CA4B /* SHTDialogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3C831CC0E87F00B7CA4B /* SHTDialogueViewController.m */; };
 		B8CD3C871CC0E8A900B7CA4B /* SHTDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3C861CC0E8A900B7CA4B /* SHTDiscoverViewController.m */; };
 		B8CD3C8A1CC0E8C300B7CA4B /* SHTMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3C891CC0E8C300B7CA4B /* SHTMeViewController.m */; };
+		B8D1F7F51CC3CD1F002F9CEA /* SHTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D1F7F41CC3CD1F002F9CEA /* SHTNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		B8CD3C861CC0E8A900B7CA4B /* SHTDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTDiscoverViewController.m; sourceTree = "<group>"; };
 		B8CD3C881CC0E8C300B7CA4B /* SHTMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTMeViewController.h; sourceTree = "<group>"; };
 		B8CD3C891CC0E8C300B7CA4B /* SHTMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTMeViewController.m; sourceTree = "<group>"; };
+		B8D1F7F31CC3CD1F002F9CEA /* SHTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTNavigationController.h; sourceTree = "<group>"; };
+		B8D1F7F41CC3CD1F002F9CEA /* SHTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +325,8 @@
 			children = (
 				B8CD3C7C1CC0E76400B7CA4B /* SHTTabBarController.h */,
 				B8CD3C7D1CC0E76400B7CA4B /* SHTTabBarController.m */,
+				B8D1F7F31CC3CD1F002F9CEA /* SHTNavigationController.h */,
+				B8D1F7F41CC3CD1F002F9CEA /* SHTNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -488,6 +493,7 @@
 				B8AF027C1CC0DFC000F180F4 /* AppDelegate.m in Sources */,
 				B8CD3C811CC0E85E00B7CA4B /* SHTHomeViewController.m in Sources */,
 				B8AF028C1CC0E50F00F180F4 /* UIView+XMGExtension.m in Sources */,
+				B8D1F7F51CC3CD1F002F9CEA /* SHTNavigationController.m in Sources */,
 				B8AF02841CC0E3B700F180F4 /* SHTTabBar.m in Sources */,
 				B8CD3C841CC0E87F00B7CA4B /* SHTDialogueViewController.m in Sources */,
 				B8CD3C7E1CC0E76400B7CA4B /* SHTTabBarController.m in Sources */,

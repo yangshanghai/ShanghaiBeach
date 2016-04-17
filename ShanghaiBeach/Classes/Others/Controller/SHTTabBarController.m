@@ -12,6 +12,7 @@
 #import "SHTDiscoverViewController.h"
 #import "SHTMeViewController.h"
 #import "SHTTabBar.h"
+#import "SHTNavigationController.h"
 
 @interface SHTTabBarController ()
 
@@ -19,11 +20,8 @@
 
 @implementation SHTTabBarController
 
-- (void)viewDidLoad
++ (void)initialize
 {
-    [super viewDidLoad];
-    
-    [UINavigationBar appearance];
     
     // 通过appearance统一设置所有UITabBarItem的文字属性
     // 后面带有UI_APPEARANCE_SELECTOR的方法, 都可以通过appearance对象来统一设置
@@ -38,6 +36,13 @@
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+
     
     // 添加子控制器
     [self setupChildVc:[[SHTHomeViewController alloc] init] title:@"首页" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
@@ -66,8 +71,7 @@
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
     // 包装一个导航控制器, 添加导航控制器为tabbarcontroller的子控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    SHTNavigationController *nav = [[SHTNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
 
