@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHTRecommendViewController">
             <connections>
                 <outlet property="categoryTableView" destination="zLu-2J-lB8" id="mhY-cQ-FdA"/>
+                <outlet property="userTableView" destination="dQJ-6m-fIX" id="kHP-eD-Knv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,12 +28,24 @@
                         <outlet property="delegate" destination="-1" id="7JB-5B-21E"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dQJ-6m-fIX" userLabel="右侧">
+                    <rect key="frame" x="70" y="0.0" width="530" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9aV-Qh-uoe"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="dQJ-6m-fIX" secondAttribute="trailing" id="Des-2y-TBe"/>
                 <constraint firstAttribute="bottom" secondItem="zLu-2J-lB8" secondAttribute="bottom" id="HwI-bR-Z79"/>
+                <constraint firstItem="dQJ-6m-fIX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KkD-ro-2xH"/>
+                <constraint firstAttribute="bottom" secondItem="dQJ-6m-fIX" secondAttribute="bottom" id="SDv-bH-0Kf"/>
                 <constraint firstItem="zLu-2J-lB8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Uol-lb-vr8"/>
                 <constraint firstItem="zLu-2J-lB8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZGH-Nb-lb7"/>
+                <constraint firstItem="dQJ-6m-fIX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hpZ-XD-rk0"/>
+                <constraint firstItem="dQJ-6m-fIX" firstAttribute="leading" secondItem="zLu-2J-lB8" secondAttribute="trailing" id="zh5-uZ-egR"/>
             </constraints>
         </view>
     </objects>

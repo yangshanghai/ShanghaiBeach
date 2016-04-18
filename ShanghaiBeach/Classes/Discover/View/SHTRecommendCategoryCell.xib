@@ -16,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dV0-nZ-lam" userLabel="分割线">
-                        <rect key="frame" x="8" y="34" width="304" height="1"/>
+                        <rect key="frame" x="8" y="39.5" width="304" height="1"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="Isq-lt-6ue"/>
@@ -36,7 +36,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="dV0-nZ-lam" secondAttribute="trailing" id="SxC-KH-HLI"/>
                     <constraint firstItem="dV0-nZ-lam" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dk9-fr-CMn"/>
                     <constraint firstItem="5jR-xx-oz2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="qQI-OB-Sha"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="dV0-nZ-lam" secondAttribute="bottom" id="vSy-A1-cUu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dV0-nZ-lam" secondAttribute="bottom" constant="-5" id="vSy-A1-cUu"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

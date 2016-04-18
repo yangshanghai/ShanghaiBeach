@@ -49,7 +49,7 @@
 {
     [super layoutSubviews];
     
-    self.textLabel.y = 1;
+    self.textLabel.y = 3;
     self.textLabel.height = self.contentView.height - 10;
 }
 @end

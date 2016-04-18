@@ -14,6 +14,9 @@
 		B87A3BAE1CC494A900C45380 /* SHTRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BAD1CC494A900C45380 /* SHTRecommendCategory.m */; };
 		B87A3BB21CC4A22F00C45380 /* SHTRecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BB01CC4A22F00C45380 /* SHTRecommendCategoryCell.m */; };
 		B87A3BB31CC4A22F00C45380 /* SHTRecommendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87A3BB11CC4A22F00C45380 /* SHTRecommendCategoryCell.xib */; };
+		B87A3BB71CC4D5AD00C45380 /* SHTRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BB51CC4D5AD00C45380 /* SHTRecommendUserCell.m */; };
+		B87A3BB81CC4D5AD00C45380 /* SHTRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87A3BB61CC4D5AD00C45380 /* SHTRecommendUserCell.xib */; };
+		B87A3BBB1CC4E82400C45380 /* SHTRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BBA1CC4E82400C45380 /* SHTRecommendUser.m */; };
 		B8AF023B1CC0DBDE00F180F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AF023A1CC0DBDE00F180F4 /* Assets.xcassets */; };
 		B8AF02491CC0DBDE00F180F4 /* ShanghaiBeachTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AF02481CC0DBDE00F180F4 /* ShanghaiBeachTests.m */; };
 		B8AF02541CC0DBDE00F180F4 /* ShanghaiBeachUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AF02531CC0DBDE00F180F4 /* ShanghaiBeachUITests.m */; };
@@ -63,6 +66,11 @@
 		B87A3BAF1CC4A22F00C45380 /* SHTRecommendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendCategoryCell.h; sourceTree = "<group>"; };
 		B87A3BB01CC4A22F00C45380 /* SHTRecommendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendCategoryCell.m; sourceTree = "<group>"; };
 		B87A3BB11CC4A22F00C45380 /* SHTRecommendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTRecommendCategoryCell.xib; sourceTree = "<group>"; };
+		B87A3BB41CC4D5AD00C45380 /* SHTRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendUserCell.h; sourceTree = "<group>"; };
+		B87A3BB51CC4D5AD00C45380 /* SHTRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendUserCell.m; sourceTree = "<group>"; };
+		B87A3BB61CC4D5AD00C45380 /* SHTRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTRecommendUserCell.xib; sourceTree = "<group>"; };
+		B87A3BB91CC4E82400C45380 /* SHTRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendUser.h; sourceTree = "<group>"; };
+		B87A3BBA1CC4E82400C45380 /* SHTRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendUser.m; sourceTree = "<group>"; };
 		B8AF022B1CC0DBDE00F180F4 /* ShanghaiBeach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShanghaiBeach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AF023A1CC0DBDE00F180F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8AF02441CC0DBDE00F180F4 /* ShanghaiBeachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShanghaiBeachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -273,6 +281,8 @@
 			children = (
 				B87A3BAC1CC494A900C45380 /* SHTRecommendCategory.h */,
 				B87A3BAD1CC494A900C45380 /* SHTRecommendCategory.m */,
+				B87A3BB91CC4E82400C45380 /* SHTRecommendUser.h */,
+				B87A3BBA1CC4E82400C45380 /* SHTRecommendUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +293,9 @@
 				B87A3BAF1CC4A22F00C45380 /* SHTRecommendCategoryCell.h */,
 				B87A3BB01CC4A22F00C45380 /* SHTRecommendCategoryCell.m */,
 				B87A3BB11CC4A22F00C45380 /* SHTRecommendCategoryCell.xib */,
+				B87A3BB41CC4D5AD00C45380 /* SHTRecommendUserCell.h */,
+				B87A3BB51CC4D5AD00C45380 /* SHTRecommendUserCell.m */,
+				B87A3BB61CC4D5AD00C45380 /* SHTRecommendUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,6 +536,7 @@
 				B8D1F7F71CC3E3E2002F9CEA /* SHTDiscoverViewController.xib in Resources */,
 				B8AF023B1CC0DBDE00F180F4 /* Assets.xcassets in Resources */,
 				B87A3BA91CC47AED00C45380 /* SHTRecommendViewController.xib in Resources */,
+				B87A3BB81CC4D5AD00C45380 /* SHTRecommendUserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B87A3BAE1CC494A900C45380 /* SHTRecommendCategory.m in Sources */,
+				B87A3BBB1CC4E82400C45380 /* SHTRecommendUser.m in Sources */,
 				B8AF027C1CC0DFC000F180F4 /* AppDelegate.m in Sources */,
 				B87A3BAB1CC47DDB00C45380 /* Foundation+Log.m in Sources */,
 				B8CD3C811CC0E85E00B7CA4B /* SHTHomeViewController.m in Sources */,
@@ -603,6 +618,7 @@
 				B8D1F7F51CC3CD1F002F9CEA /* SHTNavigationController.m in Sources */,
 				B8AF02841CC0E3B700F180F4 /* SHTTabBar.m in Sources */,
 				B8CD3C841CC0E87F00B7CA4B /* SHTDialogueViewController.m in Sources */,
+				B87A3BB71CC4D5AD00C45380 /* SHTRecommendUserCell.m in Sources */,
 				B8CD3C7E1CC0E76400B7CA4B /* SHTTabBarController.m in Sources */,
 				B8CD3C8A1CC0E8C300B7CA4B /* SHTMeViewController.m in Sources */,
 				B8AF028B1CC0E50F00F180F4 /* UIBarButtonItem+XMGExtension.m in Sources */,
