@@ -7,6 +7,7 @@
 //
 
 #import "SHTDiscoverViewController.h"
+#import "SHTRecommendViewController.h"
 
 @interface SHTDiscoverViewController ()
 
@@ -30,7 +31,8 @@
 
 - (void)friendsClick
 {
-    XMGLogFunc;
+    SHTRecommendViewController *vc = [[SHTRecommendViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
