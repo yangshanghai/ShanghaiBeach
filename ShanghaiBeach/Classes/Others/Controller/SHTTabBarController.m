@@ -50,8 +50,8 @@
     
 
     
-     [self setupChildVc:[[SHTDiscoverViewController alloc] init] title:@"发现" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
-     [self setupChildVc:[[SHTDialogueViewController alloc] init] title:@"对话" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+     [self setupChildVc:[[SHTDialogueViewController alloc] init] title:@"对话" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+     [self setupChildVc:[[SHTDiscoverViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
     [self setupChildVc:[[SHTMeViewController alloc] init] title:@"个人主页" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
     

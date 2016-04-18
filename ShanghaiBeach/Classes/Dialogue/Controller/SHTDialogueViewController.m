@@ -14,21 +14,22 @@
 
 @implementation SHTDialogueViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     // 设置导航栏标题
-    self.navigationItem.title = @"对话";
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
     // 设置导航栏左边的按钮
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(tagClick)];
     
     // 设置背景色
     self.view.backgroundColor = XMGGlobalBg;
 }
 
-- (void)friendsClick
+- (void)tagClick
 {
     XMGLogFunc;
 }
