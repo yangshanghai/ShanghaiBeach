@@ -7,6 +7,7 @@
 //
 
 #import "SHTHomeViewController.h"
+#import "SHTRecommendTagsViewController.h"
 
 @interface SHTHomeViewController ()
 
@@ -30,7 +31,8 @@
 
 - (void)tagClick
 {
-    XMGLogFunc;
+    SHTRecommendTagsViewController *tags = [[SHTRecommendTagsViewController alloc] init];
+    [self.navigationController pushViewController:tags animated:YES];
 }
 
 @end

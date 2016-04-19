@@ -38,7 +38,16 @@
     _user = user;
     
     self.screenNameLabel.text = user.screen_name;
-    self.fansCountLabel.text = [NSString stringWithFormat:@"%zd人关注", user.fans_count];
+    NSString *fanscount = nil;
+    if(user.fans_count < 10000){
+        fanscount = [NSString stringWithFormat:@"%zd人关注", user.fans_count];
+    }else{
+        fanscount = [NSString stringWithFormat:@"%.1f万人关注", user.fans_count / 10000.0];
+    }
+    
+    self.fansCountLabel.text = fanscount;
+    
+
     [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     
 }

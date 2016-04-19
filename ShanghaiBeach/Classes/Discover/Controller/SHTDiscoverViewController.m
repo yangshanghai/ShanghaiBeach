@@ -8,6 +8,7 @@
 
 #import "SHTDiscoverViewController.h"
 #import "SHTRecommendViewController.h"
+#import "SHTLoginRegisterViewController.h"
 
 @interface SHTDiscoverViewController ()
 
@@ -34,5 +35,14 @@
     SHTRecommendViewController *vc = [[SHTRecommendViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (IBAction)loginRegister {
+    
+    SHTLoginRegisterViewController *login = [[SHTLoginRegisterViewController alloc] init];
+    
+    [self.navigationController pushViewController:login animated:YES];
+    
+}
+
 
 @end

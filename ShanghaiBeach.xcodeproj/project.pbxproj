@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		969445D1C9B1B60D7B0B8625 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FD37C40D6C4A57F4696969 /* libPods.a */; };
+		B81921B21CC60F3C006FBB8F /* SHTRecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81921B11CC60F3C006FBB8F /* SHTRecommendTagsViewController.m */; };
+		B87628681CC6272F003DBF6A /* SHTRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = B87628671CC6272F003DBF6A /* SHTRecommendTag.m */; };
+		B876286C1CC62996003DBF6A /* SHTRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B876286A1CC62996003DBF6A /* SHTRecommendTagCell.m */; };
+		B876286D1CC62996003DBF6A /* SHTRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B876286B1CC62996003DBF6A /* SHTRecommendTagCell.xib */; };
+		B87628B01CC68A97003DBF6A /* SHTLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87628AE1CC68A97003DBF6A /* SHTLoginRegisterViewController.m */; };
+		B87628B11CC68A97003DBF6A /* SHTLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87628AF1CC68A97003DBF6A /* SHTLoginRegisterViewController.xib */; };
 		B87A3BA81CC47AED00C45380 /* SHTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BA61CC47AED00C45380 /* SHTRecommendViewController.m */; };
 		B87A3BA91CC47AED00C45380 /* SHTRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87A3BA71CC47AED00C45380 /* SHTRecommendViewController.xib */; };
 		B87A3BAB1CC47DDB00C45380 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BAA1CC47DDB00C45380 /* Foundation+Log.m */; };
@@ -57,6 +63,16 @@
 		40FD37C40D6C4A57F4696969 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		418D304A6E3049F271BBC4E6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4514E498D57CF39F83748DD1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B81921B01CC60F3C006FBB8F /* SHTRecommendTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendTagsViewController.h; sourceTree = "<group>"; };
+		B81921B11CC60F3C006FBB8F /* SHTRecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendTagsViewController.m; sourceTree = "<group>"; };
+		B87628661CC6272F003DBF6A /* SHTRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendTag.h; sourceTree = "<group>"; };
+		B87628671CC6272F003DBF6A /* SHTRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendTag.m; sourceTree = "<group>"; };
+		B87628691CC62996003DBF6A /* SHTRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendTagCell.h; sourceTree = "<group>"; };
+		B876286A1CC62996003DBF6A /* SHTRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendTagCell.m; sourceTree = "<group>"; };
+		B876286B1CC62996003DBF6A /* SHTRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTRecommendTagCell.xib; sourceTree = "<group>"; };
+		B87628AD1CC68A97003DBF6A /* SHTLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLoginRegisterViewController.h; sourceTree = "<group>"; };
+		B87628AE1CC68A97003DBF6A /* SHTLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTLoginRegisterViewController.m; sourceTree = "<group>"; };
+		B87628AF1CC68A97003DBF6A /* SHTLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		B87A3BA51CC47AED00C45380 /* SHTRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendViewController.h; sourceTree = "<group>"; };
 		B87A3BA61CC47AED00C45380 /* SHTRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendViewController.m; sourceTree = "<group>"; };
 		B87A3BA71CC47AED00C45380 /* SHTRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTRecommendViewController.xib; sourceTree = "<group>"; };
@@ -272,6 +288,9 @@
 				B87A3BA51CC47AED00C45380 /* SHTRecommendViewController.h */,
 				B87A3BA61CC47AED00C45380 /* SHTRecommendViewController.m */,
 				B87A3BA71CC47AED00C45380 /* SHTRecommendViewController.xib */,
+				B87628AD1CC68A97003DBF6A /* SHTLoginRegisterViewController.h */,
+				B87628AE1CC68A97003DBF6A /* SHTLoginRegisterViewController.m */,
+				B87628AF1CC68A97003DBF6A /* SHTLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,6 +334,8 @@
 			children = (
 				B8CD3C7F1CC0E85E00B7CA4B /* SHTHomeViewController.h */,
 				B8CD3C801CC0E85E00B7CA4B /* SHTHomeViewController.m */,
+				B81921B01CC60F3C006FBB8F /* SHTRecommendTagsViewController.h */,
+				B81921B11CC60F3C006FBB8F /* SHTRecommendTagsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,6 +343,8 @@
 		B8AF026C1CC0DFC000F180F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B87628661CC6272F003DBF6A /* SHTRecommendTag.h */,
+				B87628671CC6272F003DBF6A /* SHTRecommendTag.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,6 +352,9 @@
 		B8AF026D1CC0DFC000F180F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B87628691CC62996003DBF6A /* SHTRecommendTagCell.h */,
+				B876286A1CC62996003DBF6A /* SHTRecommendTagCell.m */,
+				B876286B1CC62996003DBF6A /* SHTRecommendTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -531,8 +557,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B876286D1CC62996003DBF6A /* SHTRecommendTagCell.xib in Resources */,
 				B87A3BB31CC4A22F00C45380 /* SHTRecommendCategoryCell.xib in Resources */,
 				B8AF02811CC0E0B800F180F4 /* Info.plist in Resources */,
+				B87628B11CC68A97003DBF6A /* SHTLoginRegisterViewController.xib in Resources */,
 				B8D1F7F71CC3E3E2002F9CEA /* SHTDiscoverViewController.xib in Resources */,
 				B8AF023B1CC0DBDE00F180F4 /* Assets.xcassets in Resources */,
 				B87A3BA91CC47AED00C45380 /* SHTRecommendViewController.xib in Resources */,
@@ -614,13 +642,17 @@
 				B8AF027C1CC0DFC000F180F4 /* AppDelegate.m in Sources */,
 				B87A3BAB1CC47DDB00C45380 /* Foundation+Log.m in Sources */,
 				B8CD3C811CC0E85E00B7CA4B /* SHTHomeViewController.m in Sources */,
+				B81921B21CC60F3C006FBB8F /* SHTRecommendTagsViewController.m in Sources */,
 				B8AF028C1CC0E50F00F180F4 /* UIView+XMGExtension.m in Sources */,
 				B8D1F7F51CC3CD1F002F9CEA /* SHTNavigationController.m in Sources */,
 				B8AF02841CC0E3B700F180F4 /* SHTTabBar.m in Sources */,
+				B87628681CC6272F003DBF6A /* SHTRecommendTag.m in Sources */,
 				B8CD3C841CC0E87F00B7CA4B /* SHTDialogueViewController.m in Sources */,
 				B87A3BB71CC4D5AD00C45380 /* SHTRecommendUserCell.m in Sources */,
 				B8CD3C7E1CC0E76400B7CA4B /* SHTTabBarController.m in Sources */,
 				B8CD3C8A1CC0E8C300B7CA4B /* SHTMeViewController.m in Sources */,
+				B87628B01CC68A97003DBF6A /* SHTLoginRegisterViewController.m in Sources */,
+				B876286C1CC62996003DBF6A /* SHTRecommendTagCell.m in Sources */,
 				B8AF028B1CC0E50F00F180F4 /* UIBarButtonItem+XMGExtension.m in Sources */,
 				B8CD3C871CC0E8A900B7CA4B /* SHTDiscoverViewController.m in Sources */,
 				B87A3BB21CC4A22F00C45380 /* SHTRecommendCategoryCell.m in Sources */,
