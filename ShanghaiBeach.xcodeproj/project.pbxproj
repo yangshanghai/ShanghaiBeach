@@ -15,6 +15,8 @@
 		B87628B01CC68A97003DBF6A /* SHTLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87628AE1CC68A97003DBF6A /* SHTLoginRegisterViewController.m */; };
 		B87628B11CC68A97003DBF6A /* SHTLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87628AF1CC68A97003DBF6A /* SHTLoginRegisterViewController.xib */; };
 		B87628B41CC70517003DBF6A /* SHTVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B87628B31CC70517003DBF6A /* SHTVerticalButton.m */; };
+		B87628B71CC78950003DBF6A /* SHTPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = B87628B61CC78950003DBF6A /* SHTPushGuideView.m */; };
+		B87628B91CC78990003DBF6A /* SHTPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87628B81CC78990003DBF6A /* SHTPushGuideView.xib */; };
 		B87A3BA81CC47AED00C45380 /* SHTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BA61CC47AED00C45380 /* SHTRecommendViewController.m */; };
 		B87A3BA91CC47AED00C45380 /* SHTRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87A3BA71CC47AED00C45380 /* SHTRecommendViewController.xib */; };
 		B87A3BAB1CC47DDB00C45380 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BAA1CC47DDB00C45380 /* Foundation+Log.m */; };
@@ -76,6 +78,9 @@
 		B87628AF1CC68A97003DBF6A /* SHTLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		B87628B21CC70517003DBF6A /* SHTVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTVerticalButton.h; sourceTree = "<group>"; };
 		B87628B31CC70517003DBF6A /* SHTVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTVerticalButton.m; sourceTree = "<group>"; };
+		B87628B51CC78950003DBF6A /* SHTPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPushGuideView.h; sourceTree = "<group>"; };
+		B87628B61CC78950003DBF6A /* SHTPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTPushGuideView.m; sourceTree = "<group>"; };
+		B87628B81CC78990003DBF6A /* SHTPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTPushGuideView.xib; sourceTree = "<group>"; };
 		B87A3BA51CC47AED00C45380 /* SHTRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendViewController.h; sourceTree = "<group>"; };
 		B87A3BA61CC47AED00C45380 /* SHTRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendViewController.m; sourceTree = "<group>"; };
 		B87A3BA71CC47AED00C45380 /* SHTRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTRecommendViewController.xib; sourceTree = "<group>"; };
@@ -438,6 +443,9 @@
 			children = (
 				B8AF02821CC0E3B700F180F4 /* SHTTabBar.h */,
 				B8AF02831CC0E3B700F180F4 /* SHTTabBar.m */,
+				B87628B51CC78950003DBF6A /* SHTPushGuideView.h */,
+				B87628B61CC78950003DBF6A /* SHTPushGuideView.m */,
+				B87628B81CC78990003DBF6A /* SHTPushGuideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -565,6 +573,7 @@
 				B876286D1CC62996003DBF6A /* SHTRecommendTagCell.xib in Resources */,
 				B87A3BB31CC4A22F00C45380 /* SHTRecommendCategoryCell.xib in Resources */,
 				B8AF02811CC0E0B800F180F4 /* Info.plist in Resources */,
+				B87628B91CC78990003DBF6A /* SHTPushGuideView.xib in Resources */,
 				B87628B11CC68A97003DBF6A /* SHTLoginRegisterViewController.xib in Resources */,
 				B8D1F7F71CC3E3E2002F9CEA /* SHTDiscoverViewController.xib in Resources */,
 				B8AF023B1CC0DBDE00F180F4 /* Assets.xcassets in Resources */,
@@ -663,6 +672,7 @@
 				B8CD3C871CC0E8A900B7CA4B /* SHTDiscoverViewController.m in Sources */,
 				B87A3BB21CC4A22F00C45380 /* SHTRecommendCategoryCell.m in Sources */,
 				B8AF027E1CC0DFC000F180F4 /* main.m in Sources */,
+				B87628B71CC78950003DBF6A /* SHTPushGuideView.m in Sources */,
 				B87A3BA81CC47AED00C45380 /* SHTRecommendViewController.m in Sources */,
 				B8AF027F1CC0DFC000F180F4 /* ViewController.m in Sources */,
 			);

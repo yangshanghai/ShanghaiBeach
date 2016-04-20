@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SHTTabBarController.h"
+#import "SHTPushGuideView.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,13 @@
     self.window.rootViewController = [[SHTTabBarController alloc] init];
     
     [self.window makeKeyAndVisible];
+    
+//    SHTPushGuideView *guidView = [SHTPushGuideView guideView];
+//    guidView.frame = self.window.bounds;
+//    [self.window addSubview:guidView];
+    
+    //显示推送引导
+    [SHTPushGuideView show];
     
     return YES;
 }
