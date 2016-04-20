@@ -40,8 +40,7 @@
     
     SHTLoginRegisterViewController *login = [[SHTLoginRegisterViewController alloc] init];
     
-    [self.navigationController pushViewController:login animated:YES];
-    
+    [self presentViewController:login animated:YES completion:nil]; //modal方式
 }
 
 

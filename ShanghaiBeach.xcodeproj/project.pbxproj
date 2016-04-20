@@ -14,6 +14,7 @@
 		B876286D1CC62996003DBF6A /* SHTRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B876286B1CC62996003DBF6A /* SHTRecommendTagCell.xib */; };
 		B87628B01CC68A97003DBF6A /* SHTLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87628AE1CC68A97003DBF6A /* SHTLoginRegisterViewController.m */; };
 		B87628B11CC68A97003DBF6A /* SHTLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87628AF1CC68A97003DBF6A /* SHTLoginRegisterViewController.xib */; };
+		B87628B41CC70517003DBF6A /* SHTVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B87628B31CC70517003DBF6A /* SHTVerticalButton.m */; };
 		B87A3BA81CC47AED00C45380 /* SHTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BA61CC47AED00C45380 /* SHTRecommendViewController.m */; };
 		B87A3BA91CC47AED00C45380 /* SHTRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87A3BA71CC47AED00C45380 /* SHTRecommendViewController.xib */; };
 		B87A3BAB1CC47DDB00C45380 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B87A3BAA1CC47DDB00C45380 /* Foundation+Log.m */; };
@@ -73,6 +74,8 @@
 		B87628AD1CC68A97003DBF6A /* SHTLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTLoginRegisterViewController.h; sourceTree = "<group>"; };
 		B87628AE1CC68A97003DBF6A /* SHTLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTLoginRegisterViewController.m; sourceTree = "<group>"; };
 		B87628AF1CC68A97003DBF6A /* SHTLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		B87628B21CC70517003DBF6A /* SHTVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTVerticalButton.h; sourceTree = "<group>"; };
+		B87628B31CC70517003DBF6A /* SHTVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTVerticalButton.m; sourceTree = "<group>"; };
 		B87A3BA51CC47AED00C45380 /* SHTRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendViewController.h; sourceTree = "<group>"; };
 		B87A3BA61CC47AED00C45380 /* SHTRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendViewController.m; sourceTree = "<group>"; };
 		B87A3BA71CC47AED00C45380 /* SHTRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTRecommendViewController.xib; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 				B87A3BB41CC4D5AD00C45380 /* SHTRecommendUserCell.h */,
 				B87A3BB51CC4D5AD00C45380 /* SHTRecommendUserCell.m */,
 				B87A3BB61CC4D5AD00C45380 /* SHTRecommendUserCell.xib */,
+				B87628B21CC70517003DBF6A /* SHTVerticalButton.h */,
+				B87628B31CC70517003DBF6A /* SHTVerticalButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -637,6 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87628B41CC70517003DBF6A /* SHTVerticalButton.m in Sources */,
 				B87A3BAE1CC494A900C45380 /* SHTRecommendCategory.m in Sources */,
 				B87A3BBB1CC4E82400C45380 /* SHTRecommendUser.m in Sources */,
 				B8AF027C1CC0DFC000F180F4 /* AppDelegate.m in Sources */,
