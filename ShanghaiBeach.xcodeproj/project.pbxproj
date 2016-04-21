@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		969445D1C9B1B60D7B0B8625 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FD37C40D6C4A57F4696969 /* libPods.a */; };
 		B81921B21CC60F3C006FBB8F /* SHTRecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81921B11CC60F3C006FBB8F /* SHTRecommendTagsViewController.m */; };
+		B83562B71CC87951004A8AC6 /* SHTAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83562B61CC87951004A8AC6 /* SHTAllViewController.m */; };
+		B83562BA1CC87A8A004A8AC6 /* SHTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83562B91CC87A8A004A8AC6 /* SHTVideoViewController.m */; };
+		B83562BD1CC87AA0004A8AC6 /* SHTVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83562BC1CC87AA0004A8AC6 /* SHTVoiceViewController.m */; };
+		B83562C01CC87AB5004A8AC6 /* SHTPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83562BF1CC87AB5004A8AC6 /* SHTPictureViewController.m */; };
+		B83562C31CC87AD4004A8AC6 /* SHTWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83562C21CC87AD4004A8AC6 /* SHTWordViewController.m */; };
 		B87628681CC6272F003DBF6A /* SHTRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = B87628671CC6272F003DBF6A /* SHTRecommendTag.m */; };
 		B876286C1CC62996003DBF6A /* SHTRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B876286A1CC62996003DBF6A /* SHTRecommendTagCell.m */; };
 		B876286D1CC62996003DBF6A /* SHTRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B876286B1CC62996003DBF6A /* SHTRecommendTagCell.xib */; };
@@ -68,6 +73,16 @@
 		4514E498D57CF39F83748DD1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B81921B01CC60F3C006FBB8F /* SHTRecommendTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendTagsViewController.h; sourceTree = "<group>"; };
 		B81921B11CC60F3C006FBB8F /* SHTRecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendTagsViewController.m; sourceTree = "<group>"; };
+		B83562B51CC87951004A8AC6 /* SHTAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTAllViewController.h; sourceTree = "<group>"; };
+		B83562B61CC87951004A8AC6 /* SHTAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTAllViewController.m; sourceTree = "<group>"; };
+		B83562B81CC87A8A004A8AC6 /* SHTVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTVideoViewController.h; sourceTree = "<group>"; };
+		B83562B91CC87A8A004A8AC6 /* SHTVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTVideoViewController.m; sourceTree = "<group>"; };
+		B83562BB1CC87AA0004A8AC6 /* SHTVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTVoiceViewController.h; sourceTree = "<group>"; };
+		B83562BC1CC87AA0004A8AC6 /* SHTVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTVoiceViewController.m; sourceTree = "<group>"; };
+		B83562BE1CC87AB5004A8AC6 /* SHTPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTPictureViewController.h; sourceTree = "<group>"; };
+		B83562BF1CC87AB5004A8AC6 /* SHTPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTPictureViewController.m; sourceTree = "<group>"; };
+		B83562C11CC87AD4004A8AC6 /* SHTWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTWordViewController.h; sourceTree = "<group>"; };
+		B83562C21CC87AD4004A8AC6 /* SHTWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTWordViewController.m; sourceTree = "<group>"; };
 		B87628661CC6272F003DBF6A /* SHTRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendTag.h; sourceTree = "<group>"; };
 		B87628671CC6272F003DBF6A /* SHTRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTRecommendTag.m; sourceTree = "<group>"; };
 		B87628691CC62996003DBF6A /* SHTRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTRecommendTagCell.h; sourceTree = "<group>"; };
@@ -346,6 +361,16 @@
 				B8CD3C801CC0E85E00B7CA4B /* SHTHomeViewController.m */,
 				B81921B01CC60F3C006FBB8F /* SHTRecommendTagsViewController.h */,
 				B81921B11CC60F3C006FBB8F /* SHTRecommendTagsViewController.m */,
+				B83562B51CC87951004A8AC6 /* SHTAllViewController.h */,
+				B83562B61CC87951004A8AC6 /* SHTAllViewController.m */,
+				B83562B81CC87A8A004A8AC6 /* SHTVideoViewController.h */,
+				B83562B91CC87A8A004A8AC6 /* SHTVideoViewController.m */,
+				B83562BB1CC87AA0004A8AC6 /* SHTVoiceViewController.h */,
+				B83562BC1CC87AA0004A8AC6 /* SHTVoiceViewController.m */,
+				B83562BE1CC87AB5004A8AC6 /* SHTPictureViewController.h */,
+				B83562BF1CC87AB5004A8AC6 /* SHTPictureViewController.m */,
+				B83562C11CC87AD4004A8AC6 /* SHTWordViewController.h */,
+				B83562C21CC87AD4004A8AC6 /* SHTWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -663,17 +688,22 @@
 				B8AF02841CC0E3B700F180F4 /* SHTTabBar.m in Sources */,
 				B87628681CC6272F003DBF6A /* SHTRecommendTag.m in Sources */,
 				B8CD3C841CC0E87F00B7CA4B /* SHTDialogueViewController.m in Sources */,
+				B83562BA1CC87A8A004A8AC6 /* SHTVideoViewController.m in Sources */,
 				B87A3BB71CC4D5AD00C45380 /* SHTRecommendUserCell.m in Sources */,
 				B8CD3C7E1CC0E76400B7CA4B /* SHTTabBarController.m in Sources */,
 				B8CD3C8A1CC0E8C300B7CA4B /* SHTMeViewController.m in Sources */,
 				B87628B01CC68A97003DBF6A /* SHTLoginRegisterViewController.m in Sources */,
 				B876286C1CC62996003DBF6A /* SHTRecommendTagCell.m in Sources */,
 				B8AF028B1CC0E50F00F180F4 /* UIBarButtonItem+XMGExtension.m in Sources */,
+				B83562C01CC87AB5004A8AC6 /* SHTPictureViewController.m in Sources */,
 				B8CD3C871CC0E8A900B7CA4B /* SHTDiscoverViewController.m in Sources */,
+				B83562C31CC87AD4004A8AC6 /* SHTWordViewController.m in Sources */,
 				B87A3BB21CC4A22F00C45380 /* SHTRecommendCategoryCell.m in Sources */,
 				B8AF027E1CC0DFC000F180F4 /* main.m in Sources */,
+				B83562BD1CC87AA0004A8AC6 /* SHTVoiceViewController.m in Sources */,
 				B87628B71CC78950003DBF6A /* SHTPushGuideView.m in Sources */,
 				B87A3BA81CC47AED00C45380 /* SHTRecommendViewController.m in Sources */,
+				B83562B71CC87951004A8AC6 /* SHTAllViewController.m in Sources */,
 				B8AF027F1CC0DFC000F180F4 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

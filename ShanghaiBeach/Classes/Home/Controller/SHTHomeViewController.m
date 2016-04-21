@@ -8,13 +8,21 @@
 
 #import "SHTHomeViewController.h"
 #import "SHTRecommendTagsViewController.h"
+#import "SHTAllViewController.h"
+#import "SHTVideoViewController.h"
+#import "SHTVoiceViewController.h"
+#import "SHTPictureViewController.h"
+#import "SHTWordViewController.h"
 
-@interface SHTHomeViewController ()
+@interface SHTHomeViewController () <UIScrollViewDelegate>
 @property (nonatomic, weak) UIView *indicatorView;
 
 @property (nonatomic, weak) UIButton *selectedButton;
 
 @property (nonatomic, weak) UIView *titlesView;
+
+//底部的所有内容
+@property (nonatomic, weak) UIScrollView *contentView;
 @end
 
 @implementation SHTHomeViewController
@@ -24,12 +32,31 @@
 	[super viewDidLoad];
 	
 	[self setupNav];
+    
+    [self setupChildVces];
 	
 	[self setupTitlesView];
 	
 	[self setupContentView];
 	
-	
+}
+
+-(void)setupChildVces
+{
+    SHTAllViewController *all = [[SHTAllViewController alloc] init];
+    [self addChildViewController:all];
+    
+    SHTVideoViewController *video = [[SHTVideoViewController alloc] init];
+    [self addChildViewController:video];
+    
+    SHTVoiceViewController *voice = [[SHTVoiceViewController alloc] init];
+    [self addChildViewController:voice];
+    
+    SHTPictureViewController *picture = [[SHTPictureViewController alloc] init];
+    [self addChildViewController:picture];
+    
+    SHTWordViewController *word = [[SHTWordViewController alloc] init];
+    [self addChildViewController:word];
 }
 
 -(void)setupContentView
@@ -40,18 +67,28 @@
 	UIScrollView *contentView = [[UIScrollView alloc] init];
 	
 	contentView.frame = self.view.bounds;
+    
+    contentView.delegate = self;
+    
+    //ScrollView分页功能，否则在手势滑动的时候就会出现无法分页，效果难用
+    contentView.pagingEnabled = YES;
 	
 	//以下方案导致scrollview不能有穿透效果
 //    contentView.width = self.view.width;
 //    contentView.y = 99;
 //    contentView.height = self.view.height - contentView.y - self.tabBarController.tabBar.height;
 
-	CGFloat top = CGRectGetMaxY(self.titlesView.frame);
-	CGFloat buttom = self.tabBarController.tabBar.height;
-	contentView.contentInset = UIEdgeInsetsMake(top, 0, buttom, 0);
-	contentView.backgroundColor = [UIColor yellowColor];
+    //设置内边距
+//	CGFloat top = CGRectGetMaxY(self.titlesView.frame);
+//	CGFloat buttom = self.tabBarController.tabBar.height;
+//	contentView.contentInset = UIEdgeInsetsMake(top, 0, buttom, 0);
+//	contentView.backgroundColor = [UIColor yellowColor];
 	[self.view insertSubview:contentView atIndex:0];
-	//[self.view addSubview:contentView];
+    contentView.contentSize = CGSizeMake(contentView.width * self.childViewControllers.count, 0);
+    self.contentView = contentView;
+    
+    //添加第一个控制器的view
+    [self scrollViewDidEndScrollingAnimation:contentView];
 }
 
 -(void)setupTitlesView
@@ -74,8 +111,7 @@
 	indicatorView.height = 2;
 	indicatorView.y = titlesView.height - indicatorView.height;
 	indicatorView.backgroundColor = [UIColor redColor];
-	
-	[titlesView addSubview:indicatorView];
+    indicatorView.tag = -1;
 	self.indicatorView = indicatorView;
 	
 	//内部的子标签
@@ -88,6 +124,7 @@
 		button.width = width;
 		button.height = height;
 		button.x = i * width;
+        button.tag = i;
 		[button setTitle:titles[i] forState:UIControlStateNormal];
 		//[button layoutIfNeeded]; //强制布局（强制更新子控件的frame）
 		[button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
@@ -110,6 +147,7 @@
 			self.indicatorView.centerX = button.centerX;
 		}
 	}
+    [titlesView addSubview:indicatorView];
 	
 }
 
@@ -124,6 +162,11 @@
 	         self.indicatorView.width = button.titleLabel.width;
 	         self.indicatorView.centerX = button.centerX;
 	 }];
+    
+    //切换子控制器（滚动）
+    CGPoint offset = self.contentView.contentOffset;
+    offset.x = button.tag * self.contentView.width;
+    [self.contentView setContentOffset:offset animated:YES];
 }
 
 -(void)setupNav
@@ -142,6 +185,37 @@
 {
 	SHTRecommendTagsViewController *tags = [[SHTRecommendTagsViewController alloc] init];
 	[self.navigationController pushViewController:tags animated:YES];
+}
+
+#pragma mark - <UIScrollViewDelegate>
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+    
+    // 当前的索引
+    NSInteger index = scrollView.contentOffset.x / scrollView.width;
+    
+    // 取出子控制器
+    UITableViewController *vc = self.childViewControllers[index];
+    vc.view.x = scrollView.contentOffset.x;
+    vc.view.y = 0; // 设置控制器view的y值为0(默认是20)
+    vc.view.height = scrollView.height; // 设置控制器view的height值为整个屏幕的高度(默认是比屏幕高度少个20)
+    // 设置内边距
+    CGFloat bottom = self.tabBarController.tabBar.height;
+    CGFloat top = CGRectGetMaxY(self.titlesView.frame);
+    vc.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
+    // 设置滚动条的内边距
+    vc.tableView.scrollIndicatorInsets = vc.tableView.contentInset;
+    [scrollView addSubview:vc.view];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self scrollViewDidEndScrollingAnimation:scrollView];
+    
+    // 点击按钮
+    NSInteger index = scrollView.contentOffset.x / scrollView.width;
+    [self titleClick:self.titlesView.subviews[index]];
 }
 
 @end
