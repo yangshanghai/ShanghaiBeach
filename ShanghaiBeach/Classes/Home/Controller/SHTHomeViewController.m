@@ -13,6 +13,8 @@
 @property (nonatomic, weak) UIView *indicatorView;
 
 @property (nonatomic, weak) UIButton *selectedButton;
+
+@property (nonatomic, weak) UIView *titlesView;
 @end
 
 @implementation SHTHomeViewController
@@ -25,7 +27,31 @@
     
     [self setupTitlesView];
     
+    [self setupContentView];
+
    
+}
+
+-(void)setupContentView
+{
+    //不要自动调整inset
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    UIScrollView *contentView = [[UIScrollView alloc] init];
+    
+    contentView.frame = self.view.bounds;
+    
+    //以下方案导致scrollview不能有穿透效果
+//    contentView.width = self.view.width;
+//    contentView.y = 99;
+//    contentView.height = self.view.height - contentView.y - self.tabBarController.tabBar.height;
+    
+    CGFloat top = CGRectGetMaxY(self.titlesView.frame);
+    CGFloat buttom = self.tabBarController.tabBar.height;
+    contentView.contentInset = UIEdgeInsetsMake(top, 0, buttom, 0);
+    contentView.backgroundColor = [UIColor yellowColor];
+    [self.view insertSubview:contentView atIndex:0];
+    //[self.view addSubview:contentView];
 }
 
 -(void)setupTitlesView
@@ -41,6 +67,7 @@
     titlesView.height = 35;
     titlesView.y = 64;
     [self.view addSubview:titlesView];
+    self.titlesView = titlesView;
     
     //底部的红色指示器
     UIView *indicatorView = [[UIView alloc] init];
@@ -76,8 +103,10 @@
             self.selectedButton = button;
             
             //让按钮内部的labe感觉文字内容来计算尺寸
-            [button.titleLabel sizeToFit];
-            self.indicatorView.width = button.titleLabel.width;
+            //[button.titleLabel sizeToFit];
+            //计算宽度第二种方案
+            self.indicatorView.width = [titles[i] sizeWithAttributes:@{NSFontAttributeName:button.titleLabel.font}].width;
+            //self.indicatorView.width = button.titleLabel.width;
             self.indicatorView.centerX = button.centerX;
         }
     }
